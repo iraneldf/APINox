@@ -118,7 +118,7 @@ STATIC_URL = 'static/'
 
 # Directorios donde Django buscará archivos estáticos adicionales
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'orders/static'),  # Asegúrate de que esta carpeta exista
+    os.path.join(BASE_DIR, 'orders\static'),  # Asegúrate de que esta carpeta exista
 ]
 
 # Directorio donde se recopilarán todos los archivos estáticos para producción
@@ -135,4 +135,3 @@ SWAGGER_SETTINGS = {
     'SHOW_OPENAPI': True,
     'USE_SESSION_AUTH': False,
 }
-

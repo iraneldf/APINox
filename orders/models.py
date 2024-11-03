@@ -17,7 +17,7 @@ class Restaurante(models.Model):
     nombre = models.CharField(max_length=100)
     direccion = models.CharField(max_length=255)
     capacidad = models.PositiveIntegerField()
-    clientes = models.ManyToManyField(Cliente, related_name='restaurantes', blank=True, null=True)
+    clientes = models.ManyToManyField(Cliente, related_name='restaurantes', blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     opening_time = models.TimeField(verbose_name="Hora de apertura")
     closing_time = models.TimeField(verbose_name="Hora de cierre")
